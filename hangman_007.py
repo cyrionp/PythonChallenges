@@ -66,5 +66,5 @@ pics = ["""
 
 ========="""]
 
-def Hangman():
-    
+#def Hangman():
+
