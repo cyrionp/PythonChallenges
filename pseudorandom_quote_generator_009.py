@@ -1,0 +1,20 @@
+import random
+
+#source: https://en.wikipedia.org/wiki/Avatar_(2009_film)
+
+def QuoteGenerator():
+    sentences="Despite Grace's argument that destroying Hometree could damage the biological neural network native to Pandora, Selfridge gives Jake and Grace one hour to convince the Na'vi to evacuate before commencing the attack. Jake confesses to the Na'vi that he was a spy, and they take him and Grace captive. Quaritch's men destroy Hometree, killing Neytiri's father (the clan chief) and many others. Mo'at frees Jake and Grace, but they are detached from their avatars and imprisoned by Quaritch's forces. Pilot Trudy Chacón, disgusted by Quaritch's brutality, frees Jake, Grace, and Norm, and airlifts them to Grace's outpost, but Grace is shot by Quaritch during the escape. To regain the Na'vi's trust, Jake connects his mind to that of Toruk, a dragon-like predator feared and honored by the Na'vi. Jake finds the refugees at the sacred Tree of Souls and pleads with Mo'at to heal Grace. The clan attempts to transfer Grace from her human body into her avatar with the aid of the Tree of Souls, but she dies before the process can be completed. Supported by the new chief Tsu'tey, Jake unites the clan and tells them to gather all of the clans to battle the RDA. Quaritch organizes a pre-emptive strike against the Tree of Souls, believing that its destruction will demoralize the natives. On the eve of battle, Jake prays to Eywa, via a neural connection with the Tree of Souls, to intercede on behalf of the Na'vi. During the subsequent battle, the Na'vi suffer heavy casualties, including Tsu'tey and Trudy, but are rescued when Pandoran wildlife unexpectedly join the attack and overwhelm the humans, which Neytiri interprets as Eywa's answer to Jake's prayer. Jake destroys a makeshift bomber before it can reach the Tree of Souls; Quaritch, wearing an AMP suit, escapes from his own damaged aircraft and breaks open the avatar link unit containing Jake's human body, exposing it to Pandora's poisonous atmosphere. Quaritch prepares to slit the throat of Jake's avatar, but Neytiri kills Quaritch and saves Jake from suffocation, seeing his human form for the first time. With the exceptions of Jake, Norm and a select few others, all humans are expelled from Pandora and sent back to Earth. Jake is permanently transferred into his avatar with the aid of the Tree of Souls. Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale. Python supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library. Python interpreters are available for installation on many operating systems, allowing Python code execution on a wide variety of systems. Using third-party tools, such as Py2exe or Pyinstaller,[24] Python code can be packaged into stand-alone executable programs for some of the most popular operating systems, allowing for the distribution of Python-based software for use on those environments without requiring the installation of a Python interpreter. CPython, the reference implementation of Python, is free and open-source software and has a community-based development model, as do nearly all of its alternative implementations. CPython is managed by the non-profit Python Software Foundation.".split(".")
+    sentenceNumber=int(input("How many sentences do you want: "))
+    createdQuote=[]
+    for i in range(sentenceNumber):
+        createdQuote.append(random.choice(sentences))
+
+    for sentence in createdQuote:
+        print(sentence)
+
+while True:
+    print("Quote Generator")
+    QuoteGenerator()
+    isContinue=int(input("Do you want to generate again?\n1) Yes OTHERS) No\nYour choice: "))
+    if isContinue!=1:
+        break
