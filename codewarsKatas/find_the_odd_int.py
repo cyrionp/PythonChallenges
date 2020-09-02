@@ -4,5 +4,5 @@ def find_it(seq):
     max=seq[0]
     set_num=list(set(seq))
     for num in set_num:
-        if num in seq:  
+        if num in seq: pass
 

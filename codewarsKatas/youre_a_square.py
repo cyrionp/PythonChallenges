@@ -3,6 +3,12 @@
 import math
 def is_square(n):
     if n<0: return False
-    else: return n == math.isqrt(n) ** 2
+    else:
+        num=math.sqrt(n)
+        mylist=str(num).split(".")
+        if int(mylist[1])>0:
+            return False
+        else: return True
 
 #print(is_square(144))
+#print(is_square(14))
